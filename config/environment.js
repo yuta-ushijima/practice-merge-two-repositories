@@ -1,6 +1,7 @@
 'use strict';
 
 module.exports = function(environment) {
+  const API_HOST = "https://localhost:3000";
   let ENV = {
     modulePrefix: 'ember-saml20-sso-with-azure-ad-sample',
     environment,
@@ -16,11 +17,17 @@ module.exports = function(environment) {
         Date: false
       }
     },
-
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-    }
+    },
+    torii: {
+      providers: {
+        "saml": {
+          requestTokenUri: `${API_HOST}/auth/saml?omniauth_window_type=newWindow`
+        }
+      }
+    },
   };
 
   if (environment === 'development') {
