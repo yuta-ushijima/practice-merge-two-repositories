@@ -6,7 +6,7 @@ This is sample repo for tutorial of below:
 
 ## Rails about
 
-````ruby
+```ruby
 Rails version             5.2.3
 Ruby version              2.6.3-p62 (x86_64-darwin19)
 RubyGems version          3.0.3
@@ -16,19 +16,7 @@ Application root          /Users/yuta_ushijima/workspace/d-lighted/saml20_sso_wi
 Environment               development
 Database adapter          mysql2
 Database schema version   20191031024720
-
-# ember-saml20-sso-with-azure-ad-sample
-
-This is sample repo for tutorial of below:
-
-[Integrating with Azure AD SAML 2.0 SSO using Devise Token Auth and Ember Simple Auth (Part 3)](https://medium.com/@pavloosadchyi/integrating-with-azure-ad-saml-2-0-sso-using-devise-token-auth-and-ember-simple-auth-part-3-330016641791)
-
-## ember version
-```ember
-ember-cli: 3.13.1
-node: 9.3.0
-os: darwin x64
-````
+```
 
 ## Prepare app
 
@@ -43,6 +31,25 @@ $ bundle exec rails db:migrate
 
 ```bash
 $ SSL=true bundle exec rails s
+```
+
+# ember-saml20-sso-with-azure-ad-sample
+
+This is sample repo for tutorial of below:
+
+[Integrating with Azure AD SAML 2.0 SSO using Devise Token Auth and Ember Simple Auth (Part 3)](https://medium.com/@pavloosadchyi/integrating-with-azure-ad-saml-2-0-sso-using-devise-token-auth-and-ember-simple-auth-part-3-330016641791)
+
+## ember version
+
+```ember
+ember-cli: 3.13.1
+node: 9.3.0
+os: darwin x64
+```
+
+## Prepare app
+
+```bash
 $ cd ember_saml20_sso_with_azure_ad_sample
 $ npm install
 ```
